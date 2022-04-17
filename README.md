@@ -4,6 +4,6 @@ Ce projet a été réalisé par [@Sirine Louati](https://github.com/sirinelouati
 Le but de ce projet est d'implémenter un modèle capable de repérer et identifier des animaux sur des images comme celle ci :  
 Image brute             |  Masque (réponse cible)
 :-------------------------:|:-------------------------:
-![Image Brute](HoofedAnimals/org/1.pgm)  |  ![Masque](HoofedAnimals/seg/masjks/1_mask.ppm)  
+![Image Brute](HoofedAnimals/org/1.pgm)  |  ![Masque](HoofedAnimals/seg/masks/1_mask.ppm)  
 
 Les données que nous utilisons sont libres d'utilisation, et peuvent être téléchargées [ici](https://web.engr.oregonstate.edu/~sinisa/HoofedAnimalsDataset.html).  
