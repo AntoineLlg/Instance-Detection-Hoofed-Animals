@@ -1,8 +1,6 @@
 import torch
 import torch.nn as nn
-import numpy as np
 from utils import TorchMinMaxScaler
-# A very simple U net for easy computation
 
 
 def relu_conv_down(in_channels, out_channels):

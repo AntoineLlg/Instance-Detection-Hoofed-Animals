@@ -98,6 +98,12 @@ def make_agregated_masks(masks):
     return (masks.sum(axis=-1) > 0).astype(np.float64)
 
 
+def diceloss(prepredictions, masks, smooth=1.):
+    intersections = predictions * masks
+    score = ((2*intersections + smooth)/ (prepredictions + masks + smooth)).mean()
+    return 1 - score
+
+
 def loss(predictions, masks):
     intersections = predictions * masks  # pour pénaliser le manque de certitude dans les zones à détecter
     unions = predictions + masks - intersections  # pénaliser le surplus de certitude dans les zones vides
