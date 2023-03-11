@@ -16,7 +16,6 @@ Input           |  Masque (réponse cible)
 :-------------------------:|:-------------------------:
 ![Image Brute](outputs/input1.png)  |  ![Masque](outputs/mask1.png) 
 Output           |  Superposition de l'output et de l'input
-:-------------------------:|:-------------------------:
 ![Image Brute](outputs/prediction1.png)  |  ![Masque](outputs/superpose1.png)  
 
 L'architecture UNet utilise des couches de convolution et des maxpool, qui n'imposent pas une dimension d'entrée particulière sauf une divisibilité par 2 pour la couche maxpool. Nous avons ajusté les dimensions des images par padding afin d'uniformiser leur taille et s'assurer leur bon passage à travers le réseau de neurones.  
@@ -26,5 +25,4 @@ Input           |  Masque (réponse cible)
 :-------------------------:|:-------------------------:
 ![Image Brute](outputs/biginput1.png)  |  ![Masque](outputs/bigmask1.png) 
 Output           |  Superposition de l'output et de l'input
-:-------------------------:|:-------------------------:
 ![Image Brute](outputs/bigprediction1.png)  |  ![Masque](outputs/bigsuperpose1.png) 
